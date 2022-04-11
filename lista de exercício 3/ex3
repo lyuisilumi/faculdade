@@ -1,0 +1,49 @@
+#include<stdio.h>
+#include<stdlib.h>
+using namespace std;
+int main()
+{
+    float pv,pdj,vt=1,i;
+    int op;
+    printf("tabela de pagamento\n");
+    printf("1- a vista em dinheiro ou cheque\n");
+    printf("2- a vista no cartão de crédito\n");
+    printf("3- em 2 vezes\n");
+    printf("4- em 3 vezes\n");
+    printf("qual a forma de pagamento?\n");
+    scanf("%d",&op);
+    printf("qual o preço do produto?\n");
+    scanf("%f",&pv);
+    switch(op){
+        case 1:
+            vt=pv*0.1;
+            vt=pv-vt;
+            printf("voce paga:%.2f\n",pv);
+            printf("você tem 10%% de desconto\n");
+            printf("o valor total eh:%.2f\n",vt);
+            break;
+        case 2:
+            vt=pv*0.05;
+            vt=pv-vt;
+            printf("voce paga:%.2f\n",pv);
+            printf("você tem 10%% de desconto\n");
+            printf("o valor total eh:%.2f\n",vt);
+            break;
+        case 3:
+            vt=pv/2;
+            printf("voce paga:%.2f\n",pv);
+            printf("você nao tem de desconto\n");
+            printf("o valor total a pagar por dois meses eh:%.2f\n",vt);
+            break;
+        case 4:
+            vt=pv*0.1;
+            vt=pv+vt+vt+vt;
+            printf("voce paga:%.2f\n",pv);
+            printf("você tem 10%% de desconto\n");
+            printf("o valor total eh:%.2f\n",vt);
+            break;
+        default:
+            printf("nao eh uma forma de pagamento\n");
+    }
+    return 0;
+}
