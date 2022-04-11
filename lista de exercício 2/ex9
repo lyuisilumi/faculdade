@@ -1,0 +1,36 @@
+#include <stdio.h>
+int main()
+{
+int n1,n2,resto1,resto2;
+float res;
+printf("dee dois valorees:\n");
+scanf("%d%d",&n1,&n2);
+resto1=n1%2;
+resto2=n2%2;
+if(resto1==0 && resto2==0)
+	{
+	printf ("soma\n");
+	res=(float)n1+n2;
+	printf("%.2f",res);
+	}
+if(resto1==1 && resto2==1)
+	{
+	printf ("subtrcao\n");
+	res=(float)n1-n2;
+	printf("%.2f",res);
+	}
+if(resto1==1 && resto2==0)
+	{
+	printf ("divisao\n");
+	res=(float)n1/n2;
+	printf("%.2f",res);
+	}
+if(resto1==0 && resto2==1)
+	{
+	printf ("multiplicacao\n");
+	res=(float)n1*n2;
+	printf("%.2f",res);
+	}
+
+return 0;
+}
