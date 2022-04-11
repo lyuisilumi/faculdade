@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main()
+{
+	int num,mv=0,mev=0,pmev;
+	printf("para eenceerrar digite 0\n");
+	while(num!=0)
+	{
+		printf("digite um valor:\n");
+		scanf("%d",&num);         
+		if(num<=0 )
+			printf("esse valor nao entra na conta \n");
+		else
+		{
+			if(num>mv && num!= 0)
+			{
+				pmev=mv;
+				mv=num;
+			}
+			if(pmev<num)
+				mev=pmev;
+		}
+	}
+	printf("esse eh o maior valor:%d\n",mv);
+	printf("esse eh o menor valor:%d\n",mev);
+}
