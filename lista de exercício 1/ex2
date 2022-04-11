@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+float x,y;
+printf("coloque dois numeros inteiro e diferentes:\n");
+scanf("%f%f",&x,&y);
+while(x==y)
+	{
+	printf("eles nao podem ser igual troque:\n");
+	scanf("%f%f",&x,&y);
+	}
+if(x>y)
+	printf("%.2f eh maior que %.2f",x,y);
+else
+	printf("%.2f eh maior que %.2f",y,x);
+
+return 0;
+}
