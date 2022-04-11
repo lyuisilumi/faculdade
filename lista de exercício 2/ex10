@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+float n1,n2,n3,m;
+printf("digite 3 valores:");
+scanf("%f%f%f",&n1,&n2,&n3);
+m=(n1+n2+n3)/3;
+if(m>=0 && m<5)
+	printf("reprovado");
+else
+	if(m<=7)
+		printf("exame");
+	else
+		printf("aprovado");
+
+return 0;
+}
