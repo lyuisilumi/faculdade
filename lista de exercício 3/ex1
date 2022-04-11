@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+	int r,h,pi,custo, qtl,ql;
+	int al,ab,ac;
+	printf ("qual a altura e o raio do cilindro?\n");
+	scanf("%d%d",&h,&r);
+	pi=3.1415;
+	al=2*pi*r*h;
+	ab=pi*pow(r,2);
+	ac=ab+al;
+	qtl=ac/3;
+	ql=qtl/5;
+	custo=ql*50;
+	printf("custo:%d\n",custo);
+	printf("quantidade de latas de tintas:%d",ql);
+	
+	return 0;
+}
