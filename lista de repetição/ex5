@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main(){
+	float f,c=0;
+	f=50;
+	while(f<65){
+		c=(f-32)*5/9;
+		printf("%.2f centrigrados eh igual %.2f farenheit\n",c,f);
+		f++;
+	}
+}
