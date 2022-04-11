@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+int num;
+printf("qual sua idade?\n");
+scanf("%d",&num);
+if(num>=5 && num<=7)
+	printf ("categoria infantil A");
+if(num>=8 && num<=10)
+	printf ("categoria infantil B");
+if(num>=11 && num<=13)
+	printf ("categoria juvenil A");
+if(num>=15 && num<=17)
+	printf ("categoria juvenil B");
+if(num>=18)
+	printf ("categoria senior");
+return 0;
+}
