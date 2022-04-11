@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+float sal,re50,re30,salr;
+printf("qual o salario do funcionario?\n");
+scanf("%f",&sal);
+if(sal<=300)
+	{
+		re50=sal*0.5;
+		salr=re50+sal;
+		printf("o salarioa agora eh %.2f reais",salr);
+	}
+else
+	{
+		re30=sal*0.3;
+		salr=re30+sal;
+		printf("o salarioa agora eh %.2f reais",salr);
+	}
+
+return 0;
+}
