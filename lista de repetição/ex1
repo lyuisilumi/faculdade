@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main(){
+	int idade,cont=0,i=1;
+	while(i<=10) 
+	{
+		printf("digite %d idade:\n",i);
+		scanf("%d",&idade);
+		if(idade>18)
+			cont++;
+		i++;
+	}
+printf("%d pessoas sao maior de idade",cont);
+	return 0;
+}
