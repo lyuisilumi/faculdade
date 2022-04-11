@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main(){
+	int idade,contp=0;
+	float altura,media=0,conta=0;
+	printf("para encerrar coloque uma idade negativa ou zero\n");
+	while(idade>0)
+	{
+		printf("qual sua altura?\n");
+			scanf("%f",&altura);
+		printf("qual sua idade?\n");
+			scanf("%d",&idade);
+		if (idade>50)
+		{
+			contp++;
+			conta+=altura;
+		}
+	}
+	media=conta/contp;
+	if(media==0)
+		printf("nao ouve pessoa maior de 51 anos\n");
+	else
+		printf("media eh:%.2f\n",media);
+}
