@@ -1,0 +1,39 @@
+#include <stdio.h>
+int main()
+{
+int n1,n2,resto1,resto2;
+float res;
+printf("De dois valores:\n");
+scanf("%d%d",&n1,&n2);
+resto1=n1%2;
+resto2=n2%2;
+switch(resto1)
+{
+case 0:switch(resto2)
+		{
+		case 0:printf("dois pares\n");
+		res=(float)n1+n2;
+		printf ("soma = %.2f",res);
+		break;
+		case 1:
+		printf("par e impar\n");
+		res=(float)n1*n2;
+		printf ("multiplicacao = %.2f",res);
+		break;
+		}
+		break;
+case 1:switch(resto2)
+		{
+		case 0:printf("impar e par\n");
+		res=(float)n1/n2;
+		printf ("divisao = %.2f",res);
+		break;
+		case 1:
+		printf("dois impares\n");
+		res=(float)n1-n2;
+		printf ("subtracao = %.2f",res);
+		break;
+		}
+}
+return 0;
+}
