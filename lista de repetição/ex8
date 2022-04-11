@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+	int soma,i=1,mult,rest;
+	while(i<=10){
+		mult=3*i;
+		rest=mult%2;
+		if(rest==1)
+			soma+=mult;
+		i++;
+	}
+	printf("soma: %d\n",soma);
+}
