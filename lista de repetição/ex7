@@ -1,0 +1,61 @@
+#include <stdio.h>
+int main()
+{
+	int idade=18;
+	char gr;
+	while (idade>=18 && idade <=70)
+	{
+		printf("qual sua idade?\n");
+			scanf("%d",&idade);
+		if(idade<18 || idade>70)
+			printf("obrigado por usar o programa\n");
+		else
+		{
+			printf("qual seu grupo de risco?\n");
+				scanf(" %c",&gr);
+			if(idade>=18 && idade <=24)
+			{
+				if(gr=='b'||gr=='B')
+					printf("codigo 7\n");
+				else
+				{
+					if(gr=='m'||gr=='M')
+						printf("codigo 8\n");
+					else
+						printf("codigo 9\n");
+				}
+			}
+			else
+			{
+				if(idade>=25 && idade <=40)
+				{
+					if(gr=='b'||gr=='B')
+						printf("codigo 4\n");
+					else
+					{
+					if(gr=='m'||gr=='M')
+						printf("codigo 5\n");
+					else
+						printf("codigo 6\n");
+					}
+				}
+				else
+				{
+					if(idade>=41 && idade <=70)
+					{
+						if(gr=='b'||gr=='B')
+							printf("codigo 1\n");
+						else
+						{
+							if(gr=='m'||gr=='M')
+								printf("codigo 2\n");
+							else
+								printf("codigo 3\n");
+						}
+					}	
+				}	
+			}
+		}	
+	}
+return 0;
+}
