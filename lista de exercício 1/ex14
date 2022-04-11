@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+float pc,pv,l,lp;
+printf("Qual o valor de compra?\n");
+	scanf("%f",&pc);
+printf("Qual o valor de venda?\n");
+	scanf("%f",&pv);
+l=pv-pc;
+lp=l/pv;
+printf("O comerciante tem %.2f porcento de lucro percentual",lp);
+	
+return 0;
+}
