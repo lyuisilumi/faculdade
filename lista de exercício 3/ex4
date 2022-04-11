@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main()
+{
+	float sb,sf,idade, anoc, ndf,anoa,anot,anotp,depe;
+	printf("qual seu salario?\n");
+		scanf("%f",&sb);
+	printf("quantas pessoas vive com voce?\n");
+		scanf("%f",&ndf);
+	printf("qual sua idade?\n");
+		scanf("%f",&idade);
+	printf("em quee ano vc foi contratado?\n");
+		scanf("%f",&anoc);
+	printf("em que ano vc esta?\n");
+		scanf("%f",&anoa);
+	//3% por casa ano trabalhado
+	anot=(anoa-anoc)*0.03;
+	anot=sb*anot;
+	//1% pro casa ano de idade superiror a 25	
+	anotp=idade/25/100; // numero de casa superior a 25 ex:50/2 = 2 =0,02
+	anotp=sb*anotp;
+	//5% por dependente
+	depe=ndf*0.05;
+	depe=sb*depe;
+	sf=sb+depe+anotp+anot;
+	printf("salario final:%.2f\n",sf);
+	
+	return 0;
+}
