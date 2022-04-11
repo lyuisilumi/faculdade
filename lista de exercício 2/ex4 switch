@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int op;
+void menu(){
+printf("1-soma\n");
+printf("2-multiplicacao\n");
+printf("3-finalizar\n");
+}
+int main()
+{
+int a,b,c;
+printf("\n\n\n\nqual voce escolhe:");
+scanf("%d",&op);
+switch(op)
+	{
+	case 1:
+		printf("de os valores para a soma:");
+		scanf("%d%d",&a,&b);
+		c=a+b;
+		printf("a some eh = %d\n",c);
+		break;
+	case 2:
+		printf("de os valores para a multiplicacao:");
+		scanf("%d%d",&a,&b);
+		c=a*b;
+		printf("a multiplicacao eh = %d",c);
+		break;
+	case 3:
+		printf("obg por usar meu programa");
+		break;
+	default:
+		printf("nao eh uma opcao");
+		break;
+		
+	}
+
+return 0;
+}
