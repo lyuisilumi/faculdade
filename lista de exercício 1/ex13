@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+int an,aa,i;
+float s;
+printf("Insira o seu ano de nascimento:");
+	scanf("%d",&an);
+printf("E em que ano voce esta?\n");
+	scanf("%d",&aa);
+i=aa-an;
+s=i*52.143;
+printf("voce tem %d anos.\ne tem %.2f semanas.",i,s)	;
+return 0;
+}
