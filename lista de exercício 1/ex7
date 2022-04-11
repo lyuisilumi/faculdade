@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+float n1,n2,p1,p2,mp;
+printf("De as notas do aluno\nnota1:");
+	scanf("%f",&n1);
+printf("nota2:");
+	scanf("%f",&n2);
+printf("Agora coloque o peso de cada nota.\nPeso da nota1:");
+	scanf("%f",&p1);
+printf("Peso da nota2:");
+	scanf("%f",&p2);
+mp=(n1*p1+p2*n2)/(p1+p2);
+printf("Media ponderada=%.2f",mp);
+
+return 0;
+}
