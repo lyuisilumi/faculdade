@@ -1,0 +1,47 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int nc=1,cont=0;
+	float pkwh,kwhc,totalp,mac=0,mec=99999,tcom,media,si=0,sr=0,sc=0;
+	char cod;
+	printf("qual o preco do kwh?\n");
+		scanf("%f",&pkwh);
+	while(nc!=0)
+	{
+		printf("qual seu numero?\n");
+			scanf("%d",&nc);
+		if(nc==0)
+			printf("obreigado por usar o programa\n");
+		else
+		{
+			printf("qual seu consumo no mes?\n");
+				scanf("%f",&kwhc);
+			fflush(stdin);
+			printf("qual seu tipo de codigo?\n");
+				scanf("%c",&cod);
+			totalp=pkwh*kwhc;
+			printf("total a pagar = %.2f\n",totalp);
+			if(kwhc>mac)
+				mac=kwhc;
+			if(kwhc<mec)
+				mec=kwhc;
+			if(cod=='r' || cod=='R')
+				sr=sr+kwhc;
+			if(cod=='c' || cod=='C')
+				sc=sc+kwhc;
+			if(cod=='i' || cod=='I')
+				si=si+kwhc;
+			cont++;
+		}
+	}
+	printf("maior consumo = %.2f\n",mac);
+	printf("menor consumo = %.2f\n",mec);
+	printf("cosumo residencial = %.2f\n",sr);
+	printf("cosumo comercial = %.2f\n",sc);
+	printf("cosumo industrial = %.2f\n",si);
+	media=(sr+sc+si)/cont;
+	printf("media total = %.2lf\n",media);
+	
+	return 0;
+}
