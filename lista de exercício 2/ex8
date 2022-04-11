@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main()
+{
+float pp;
+int cod;
+printf("qual o preco do produto?\n");
+scanf("%f",&pp);
+printf("qual o codigo?\n");
+scanf("%d",&cod);
+if(cod==1)
+	printf ("sul");
+if(cod==2)
+	printf ("norte");
+if(cod==3)
+	printf ("leste");
+if(cod==4)
+	printf ("oeste");
+if(cod==5||cod==6)
+	printf ("nordeste");
+if(cod==7||cod==8||cod==9)
+	printf ("suldeste");
+if(cod>=10&&cod<=20)
+	printf ("centro-oeste");
+if(cod>=21&&cod<=30)
+	printf ("noroeste");
+if(cod>=31)
+	printf("nao eeh um codigo");
+return 0;
+}
