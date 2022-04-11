@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main ()
+{
+	float p, i, n, m, y, x;
+	printf("Quantia investida:\n");
+	scanf("%f",&p);
+	printf("Taxa de juros:\n");
+	scanf("%f",&i);
+	printf("Período em meses:\n");
+	scanf("%f",&n);
+	i=i/100;
+    m=p*(1+(i*n));
+	printf("%f",m);
+}
