@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{
+int idade;
+printf("qual sua idade?\n");
+scanf("%d",&idade);
+if(idade>=18)
+	printf("voce tem %d anos ou seja eh de maior",idade);
+else
+	printf("voce tem %d anos ou seja eh de menor",idade);
+
+return 0;
+}
