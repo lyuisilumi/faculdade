@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+int x,y;
+printf("De dois numeros inteiros:");
+scanf("%d%d",&x,&y);
+if(x==y)
+	printf("esse valores sao iguais");
+else
+	if(x<y)
+		printf("%d eh menor ",x);
+	else
+		printf("%d eh menor ",y);
+}
