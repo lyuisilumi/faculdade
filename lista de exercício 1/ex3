@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+int n,d,r,quo;
+printf("Me mostre o numerado e o denominador:\n");
+scanf("%d%d",&n,&d);
+r=n%d;
+printf("resto=%d",r);
+
+return 0;
+}
