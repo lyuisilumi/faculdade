@@ -1,0 +1,102 @@
+#include<stdio.h>
+
+int main(){
+	char resp;
+	printf("eh mamifero?\n");
+	scanf("%c",&resp);
+	if(resp=='s' || resp=='S')
+	{	
+		printf("eh quadrupede?\n");
+		fflush(stdin);
+		scanf("%c",&resp);
+			if(resp=='s' || resp=='S'){
+				fflush(stdin);
+				printf("eh carmivoro?\n");
+				scanf("%c",&resp);
+					if(resp=='s' || resp=='S')
+						printf("leao\n");
+					else
+						printf("cavalo\n");
+			}
+			else
+			{
+				fflush(stdin);
+				printf("eh hibrido?\n");
+				scanf("%c",&resp);
+					if(resp=='s' || resp=='S')
+					{
+						fflush(stdin);
+						printf("eh onivoro?\n");
+						scanf("%c",&resp);
+							if(resp=='s' || resp=='S')
+								printf("homem\n");
+							else
+								printf("macaco\n");
+					}
+					else
+					{
+					fflush(stdin);
+					printf("eh voador?\n");
+					scanf("%c",&resp);
+						if(resp=='s' || resp=='S')
+							printf("morcego\n");
+						else
+							printf("baleia\n");
+					}
+			}
+	}
+		else
+		{
+			fflush(stdin);
+			printf("eh uma ave\n");
+			scanf("%c",&resp);
+				if(resp=='s' || resp=='S')
+				{
+					fflush(stdin);
+					printf("eh nao voador?\n");
+					scanf("%c",&resp);
+						if(resp=='s' || resp=='S')
+						{
+							printf("eh tropical?\n");
+							fflush(stdin);
+							scanf("%c",&resp);
+								if(resp=='s' || resp=='S')
+									printf("avestruz\n");
+								else
+									printf("pinguim\n");
+			
+						}
+						else
+						{
+							printf("eh nadador?\n");
+							fflush(stdin);
+							scanf("%c",&resp);
+							if(resp=='s' || resp=='S')
+								printf("pato\n");
+							else
+								printf("aguia\n");
+						}
+				}
+				else
+				{
+					printf("tem cascaso?\n");
+					fflush(stdin);
+					scanf("%c",&resp);	
+						if(resp=='s' || resp=='S')
+							printf("tartaruga\n");
+						else
+						{
+						printf("tem cascaso?\n");
+						fflush(stdin);
+						scanf("%c",&resp);	
+							if(resp=='s' || resp=='S')
+								printf("cracodilo\n");
+							else
+								printf("cobra\n");	
+						}
+						
+				}
+			
+		}	
+return 0;
+}
