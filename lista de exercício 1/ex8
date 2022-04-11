@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+int m;
+float d,r,t,p,eq1,j;
+printf("Digite o valor que deseja depositar:");
+	scanf("%f",&d);
+printf("Digite o valor do juros:");
+	scanf("%f",&j);
+printf("Quantos meses deseja poupar seu dinheiro?\n");
+	scanf("%d",&m);
+p=j/100;
+eq1= pow((1+p),m);
+t= d*eq1;
+r=t-d;
+printf("Seu rendimento ao final de %d meses sera de %.2f reais\ntotalizando %.2f em sua conta",m,r,t);
+
+return 0;
+}
