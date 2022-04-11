@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+int i,m,d;
+float h,mi;
+printf("digite sua idade:");
+	scanf("%d",&i);
+m=i*12;
+d=i*365;
+h=i*8760;
+mi=h*60;
+printf("voce tem:\n%d meses\n%d dias\n%.3f horas\n%.1f minutos",m,d,h,mi);
+
+return 0;
+}
