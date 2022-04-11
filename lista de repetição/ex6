@@ -1,0 +1,91 @@
+#include <stdio.h>
+int main()
+{
+	int cod;
+	char rea;
+	float sb,sf,sbn;
+	while(cod<6)
+	{
+		printf("Qual seu codigo?\n");
+			scanf("%d",&cod);
+		switch(cod)
+		{
+			case 1:
+				printf("seu cargo eh escrituario\n");
+				printf("voce tem direito ah 50%% de aumento.\n");
+				printf("deseja ver o reajuste?\n");
+					fflush(stdin);
+					scanf("%c",&rea);
+				if(rea=='s'||rea=='S')
+				{
+					printf("qual seu salario?\n");
+						scanf("%f",&sb);
+					sbn=sb*0.5;
+					sf=sb+sbn;
+					printf("voce tem %.2f para recerber.\n",sf);	
+				}
+				else
+					printf("obrigado por usar o programa\n");
+			break;
+			case 2:
+				printf("seu cargo eh secretario\n");
+				printf("voce tem direito ah 35%% de aumento.\n");
+				printf("deseja ver o reajuste?\n");
+					fflush(stdin);
+					scanf("%c",&rea);
+				if(rea=='s'||rea=='S')
+				{
+					printf("qual seu salario?\n");
+						scanf("%f",&sb);
+					sbn=sb*0.35;
+					sf=sb+sbn;
+					printf("voce tem %.2f para recerber.\n",sf);	
+				}
+				else
+					printf("obrigado por usar o programa\n");
+			break;
+			case 3:
+				printf("seu cargo eh caixa\n");
+				printf("voce tem direito ah 20%% de aumento.\n");
+				printf("deseja ver o reajuste?\n");
+					fflush(stdin);
+					scanf("%c",&rea);
+				if(rea=='s'||rea=='S')
+				{
+					printf("qual seu salario?\n");
+						scanf("%f",&sb);
+					sbn=sb*0.2;
+					sf=sb+sbn;
+					printf("voce tem %.2f para recerber.\n",sf);	
+				}
+				else
+					printf("obrigado por usar o programa\n");
+			break;
+			case 4:
+				printf("seu cargo eh gerente\n");
+				printf("voce tem direito ah 10%% de aumento.\n");
+				printf("deseja ver o reajuste?\n");
+					fflush(stdin);
+					scanf("%c",&rea);
+				if(rea=='s'||rea=='S')
+				{
+					printf("qual seu salario?\n");
+						scanf("%f",&sb);
+					sbn=sb*0.1;
+					sf=sb+sbn;
+					printf("voce tem %.2f para recerber.\n",sf);	
+				}
+				else
+					printf("obrigado por usar o programa\n");
+			break;
+			case 5:
+				printf("seu cargo eh diretor\n");
+				printf("voce nao te nenhum aumento.\n");
+				printf("obrigado por usar o programa\n");
+			break;
+		}
+	}
+	
+	printf("obg por usar meu programa\n");
+	return 0;
+}
