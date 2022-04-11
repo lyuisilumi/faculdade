@@ -1,0 +1,31 @@
+#include <stdio.h>
+int main()
+{
+int a,b,c,op;
+printf("opcao de contas\n");
+printf("1-soma\n");
+printf("2-multiplicacao\n");
+printf("3-finalizar\n");
+printf("qual voce escolhe?\n");
+scanf("%d",&op);
+if(op==1)
+{
+	printf("insira os valores para a soma:\n");
+	scanf("%d%d",&a,&b);
+	c=a+b;
+	printf("A soma = %d",c);
+}
+if(op==2)
+{
+	printf("insira os valores para a multiplicacao:\n");
+	scanf("%d%d",&a,&b);
+	c=a*b;
+	printf("A multiplicacao = %d",c);
+}
+if(op==3)
+	printf("obg por usar o programa");
+if(op>=4)
+	printf("isso nao eh uma opcao");
+
+return 0;
+}
